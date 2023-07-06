@@ -23,7 +23,6 @@ Asiabtn.addEventListener('click', () => loadCountries('Asia'));
 Americasbtn.addEventListener('click', () => loadCountries('Americas'));
 
 cardContainer.addEventListener('click', (e) => {
-  
   if (e.target.id === 'remove') {
     loadCountries('allcountries');
   }
