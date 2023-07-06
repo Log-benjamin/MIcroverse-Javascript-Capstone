@@ -1,7 +1,8 @@
 import './style.css';
 import Logo from './asset/logo-img.gif';
 import {
-  logoContainer, allCountriesbtn, Americasbtn, Asiabtn, Africabtn, Europebtn,
+  cardContainer, logoContainer, allCountriesbtn, Americasbtn, Asiabtn,
+  Africabtn, Europebtn,
 } from './modules/DomValues.js';
 import loadCountries from './modules/populate.js';
 
@@ -20,3 +21,9 @@ Africabtn.addEventListener('click', () => loadCountries('Africa'));
 Asiabtn.addEventListener('click', () => loadCountries('Asia'));
 
 Americasbtn.addEventListener('click', () => loadCountries('Americas'));
+
+cardContainer.addEventListener('click', (e) => {
+  if (e.target.id === 'remove') {
+    loadCountries('allcountries');
+  }
+});
