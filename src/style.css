@@ -1,5 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Gloria+Hallelujah&display=swap');
+
 * {
-  box-sizing: border-box;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
   padding: 0;
   margin: 0;
+  background-color: #8cb5b7;
 }
+
+/* styling for the header section starts */
+.header-nav {
+  display: flex;
+  background-color: #a9d5e6;
+  height: 110px;
+}
+
+.logo {
+  margin: 0 3% 0 3%;
+  padding: 0;
+}
+
+.search-section {
+  width: 38%;
+  margin-top: 1.75rem;
+  padding: 0;
+}
+
+.search-section input {
+  font-size: 1em;
+  padding: 0;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid rgb(31, 127, 149);
+  outline: none;
+  background-color: #a9d5e6;
+}
+
+.search-section button {
+  font-size: 1em;
+  background-color: rgb(31, 127, 149);
+  color: #fff;
+  padding: 0.1em 1.5em;
+  border: none;
+  border-radius: 2em;
+}
+
+.count-On-display {
+  margin-top: 3.5rem;
+  margin-left: -2em;
+  margin-right: 5%;
+  text-align: center;
+  color: rgb(31, 127, 149);
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5rem;
+}
+
+.nav-section {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-section ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-section ul li {
+  position: relative;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  color: #848484;
+  height: 30px;
+}
+
+.search-section button:hover {
+  color: black;
+  background-color: rgb(49, 169, 133);
+  cursor: pointer;
+}
+
+.nav-section ul li:hover {
+  color: rgb(21, 156, 186);
+  cursor: pointer;
+  border-bottom: 2px solid rgb(21, 156, 186);
+  border-radius: 0.5em;
+}
+
+/* styling for the header section ends */
+
+/* styling for the main section starts */
+
+.card-secton {
+  margin: 2% 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.country-Container {
+  background-color: #a0bcc6;
+  border: 3px solid rgb(101, 101, 101);
+  padding: 15px;
+  border-radius: 1em;
+}
+
+.card-secton.active {
+  margin: 2% 5%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.pop-Container {
+  position: relative;
+  margin: 4% 0 4% 5%;
+  width: 85%;
+  background-color: #628490;
+  border: none;
+  padding: 15px;
+  border-radius: 1em;
+}
+
+.flag {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.fl-active {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 3%;
+  margin-right: 4%;
+  width: 40%;
+  height: 270px;
+}
+
+.commentBtn {
+  font-size: 1.1em;
+  background-color: rgb(31, 127, 149);
+  color: #fff;
+  padding: 0.1em 1em;
+  border: none;
+  border-radius: 0.6em;
+}
+
+.fa-circle-xmark {
+  color: #183343;
+  position: absolute;
+  right: -10px;
+  top: 0.5px;
+}
+
+.country-Name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.commentLike {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 5%;
+}
+
+.img-and-desc {
+  display: flex;
+}
+
+.country-description h2,
+.country-span {
+  color: greenyellow;
+}
+
+.country-description h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  margin: 1rem;
+}
+
+.country-description p {
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.country-description .wiki-link a {
+  color: blue;
+}
+
+.commentLike-Pop {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  margin: 2% 5%;
+}
+
+.commentContainer h2 {
+  text-align: center;
+}
+
+#userName {
+  font-size: 1em;
+  padding: 0;
+  width: 50%;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(5, 7, 7);
+  outline: none;
+  color: white;
+  background-color: #628490;
+}
+
+#userName::placeholder {
+  color: aliceblue;
+}
+
+.form-Container {
+  margin-left: 8%;
+}
+
+.form-Container form textarea {
+  width: 76%;
+  height: 100px;
+  margin-top: 2rem;
+  padding-left: 10px;
+  padding-top: 8px;
+  border: 3px solid black;
+  border-radius: 1em;
+  color: black;
+}
+
+.form-Container form textarea::placeholder {
+  color: rgb(150, 138, 138);
+}
+
+.form-Container .submit-comment {
+  margin-top: 1rem;
+  margin-left: 53%;
+  background-color: rgb(49, 169, 133);
+}
+
+.commentBtn:hover {
+  background-color: rgb(49, 169, 133);
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-heart:hover,
+.fa-circle-xmark:hover {
+  color: #9e3333;
+  cursor: pointer;
+}
+
+.form-Container .submit-comment:hover {
+  background-color: rgb(23, 197, 50);
+  cursor: pointer;
+}
+
+/* styling for the main section ends */
+
+/* styling for the footer section starts */
+footer {
+  font-size: 20px;
+  text-align: center;
+  margin: 1rem 5% 1rem 5%;
+  color: rgb(255, 255, 255);
+  background: rgb(31, 127, 149);
+  border: 0.5px solid black;
+  border-radius: 2%;
+}
+
+/* styling for the footer section ends */
