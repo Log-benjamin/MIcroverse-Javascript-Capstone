@@ -1,11 +1,10 @@
 import './style.css';
 import Logo from './asset/logo-img.gif';
 import {
-  cardContainer, searchBtn, countryInp, logoContainer, allCountriesbtn, Americasbtn, Asiabtn,
+  cardContainer, logoContainer, allCountriesbtn, Americasbtn, Asiabtn,
   Africabtn, Europebtn,
 } from './modules/DomValues.js';
 import loadCountries from './modules/populate.js';
-import { addComment } from './modules/submitComment.js';
 
 const myIcon = new Image();
 myIcon.src = Logo;
@@ -24,12 +23,8 @@ Asiabtn.addEventListener('click', () => loadCountries('Asia'));
 Americasbtn.addEventListener('click', () => loadCountries('Americas'));
 
 cardContainer.addEventListener('click', (e) => {
-  if (e.target.className === 'commentBtn') {
-    searchandFind(e.target.id);
-  }
-
+  
   if (e.target.id === 'remove') {
     loadCountries('allcountries');
   }
-
 });
