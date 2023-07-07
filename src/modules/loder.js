@@ -48,19 +48,19 @@ const loadOnPage = () => {
   cardContainer.addEventListener('click', (e) => {
     e.preventDefault();
     if (e.target.className === 'commentBtn') {
-      searchandFind(e.target.id);
       setTimeout(async () => {
         const comments = await fetchComments(e.target.id);
         displayComments(comments);
         displayCommentCount(comments.length);
-      }, 1000);
+      }, 500);
+      searchandFind(e.target.id);
     }
 
     if (e.target.id === 'remove') {
-      loadCountries('allcountries');
+      window.location.reload();
     }
 
-    if (e.target.className === 'fa-regular fa-heart fa-2xl') {
+    if (e.target.className === 'fa-solid fa-heart fa-2xl') {
       addLike(e.target.id);
       const likeValue = Number(e.target.parentElement.children[1].innerHTML);
       e.target.parentElement.children[1].innerHTML = likeValue + 1;
@@ -72,12 +72,14 @@ const loadOnPage = () => {
       const userComment = document.getElementById('userComment').value;
 
       postComment(countryName, userName, userComment);
+      document.getElementById('userName').value = '';
+      document.getElementById('userComment').value = '';
 
       setTimeout(async () => {
         const comments = await fetchComments(countryName);
         displayComments(comments);
         displayCommentCount(comments.length);
-      }, 1000);
+      }, 500);
     }
   });
 };

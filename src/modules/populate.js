@@ -21,7 +21,8 @@ const getCountry = (country, selected, likeData) => {
                     <button id="${country.name.common}" class="commentBtn" type="text">Comment</button>
 
                     <div class="countLikes">
-                        <i id="${country.name.common}"  class="fa-regular fa-heart fa-2xl"></i>
+                        <i id="${country.name.common}"  class="fa-solid fa-heart fa-2xl"></i>
+                        
                      <span class="insertLike">${likevalue}</span><span>likes</span>
                     </div>
                  </div>

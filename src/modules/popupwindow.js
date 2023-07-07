@@ -73,8 +73,11 @@ export const displayComments = (comments) => {
 
   comments.forEach((comment) => {
     const commentElement = document.createElement('div');
-    commentElement.textContent = `${comment.username}: ${comment.comment}`;
-    allCommentsElement.appendChild(commentElement);
+    commentElement.className = 'Usrcomments';
+    if (comment.creation_date !== '' && comment.username !== '' && comment.comment !== '') {
+      commentElement.textContent = `${comment.creation_date}- ${comment.username}: ${comment.comment}`;
+      allCommentsElement.appendChild(commentElement);
+    }
   });
 };
 

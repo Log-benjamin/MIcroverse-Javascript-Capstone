@@ -1,7 +1,7 @@
 import counterHomepage from '../modules/counter.js';
 
 describe('counterHomepage', () => {
-  test('should count the number of items on the homepage', () => {
+  test('should count the country list', () => {
     const data = [
       {
         comment: 'best city ever ',
@@ -41,5 +41,24 @@ describe('counterHomepage', () => {
     ];
     const result = counterHomepage(data);
     expect(result).toBe(7);
+  });
+
+  test('should count the country list', () => {
+    const data = [
+      {
+        comment: 'best city ever ',
+        creation_date: '2023-07-07',
+        username: 'fares',
+      },
+
+    ];
+    const result = counterHomepage(data);
+    expect(result).toBe(1);
+  });
+
+  test('should count the country list', () => {
+    const data = [];
+    const result = counterHomepage(data);
+    expect(result).toBe(0);
   });
 });

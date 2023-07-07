@@ -17,8 +17,34 @@ body {
 }
 
 .top-one {
+  margin-left: 2%;
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: -10px;
+}
+
+.xplore {
+  position: absolute;
+  text-align: center;
+  margin-top: -15px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: rgb(25, 158, 188);
+  font-size: 28px;
+}
+
+.xplore:hover {
+  color: greenyellow;
+}
+
+.logo img {
+  margin-top: 10px;
 }
 
 .top-two {
@@ -182,6 +208,10 @@ body {
   border-radius: 0.6em;
 }
 
+.Usrcomments {
+  color: white;
+}
+
 #remove {
   color: #183343;
   position: absolute;
@@ -270,7 +300,7 @@ footer p {
 .fa-heart:hover,
 .fa-circle-xmark:hover,
 #remove:hover {
-  color: #9e3333;
+  color: #d41515;
   cursor: pointer;
 }
 
@@ -302,9 +332,18 @@ footer {
 
 @media screen and (min-width: 768px) {
   /* styling for the header section starts */
+  .closeMenu.active,
+  .search-section.active,
+  .menu.active,
+  .nav-section.active,
+  .header-nav.active {
+    display: none;
+  }
+
   .header-nav {
     display: flex;
     padding-right: 2%;
+    height: 110px;
   }
 
   .top-one {
@@ -370,7 +409,7 @@ footer {
 
   .pop-Container {
     position: relative;
-    margin: 4% 0 4% 5%;
+    margin: 4% 0 4% 0;
     width: 85%;
   }
 

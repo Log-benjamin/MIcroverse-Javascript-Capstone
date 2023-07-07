@@ -6,6 +6,7 @@ import loadOnPage from './modules/loder.js';
 
 const myIcon = new Image();
 myIcon.src = Logo;
+
 logoContainer.appendChild(myIcon);
 
 loadOnPage();
