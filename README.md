@@ -18,6 +18,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🎥 Video Presentation](#video)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -78,8 +79,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Live Demo Link](https://log-benjamin.github.io/Microverse-Javascript-Capstone/dist/)
 
-- [Live Demo Link](https://google.com)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Video Presentation <a name="#video"></a>
 - [Video Presentation](https://drive.google.com/file/d/1EbcGRrg-FkY9FJKfu1yujd-0CGSkGdCS/view?usp=drive_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
