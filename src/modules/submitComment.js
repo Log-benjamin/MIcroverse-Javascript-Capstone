@@ -1,17 +1,14 @@
-import { involvmentApiLikes } from './getApiData.js';
-
-
 const createComment = async (countryName) => {
   try {
-    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kM38kn2JqCtpujHZtAbZ/comments/`, {
+    const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kM38kn2JqCtpujHZtAbZ/comments/', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
       body: JSON.stringify({
-          item_id: countryName,
-          username: '',
-          comment: ''
+        item_id: countryName,
+        username: '',
+        comment: '',
       }),
     });
     const data = await response.json();
@@ -22,14 +19,12 @@ const createComment = async (countryName) => {
   }
 };
 
-
-
 const addComment = async (result) => {
   const countryName = result.id;
   const userName = result.parentElement.children[0].value;
   const usercomment = result.parentElement.children[1].value;
   try {
-    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kM38kn2JqCtpujHZtAbZ/comments/`, {
+    const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/kM38kn2JqCtpujHZtAbZ/comments/', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
@@ -37,7 +32,7 @@ const addComment = async (result) => {
       body: JSON.stringify({
         item_id: countryName,
         username: userName,
-        comment: usercomment
+        comment: usercomment,
       }),
     });
     const data = await response.json();
@@ -63,8 +58,6 @@ const getCommentData = async (country) => {
     return `Error creating Cooment: ${error}`;
   }
 };
-
-
 
 // const getCommentData = async (country) => {
 //   try {
@@ -103,6 +96,4 @@ const getCommentData = async (country) => {
 //   }
 // };
 
-
-
-export  { addComment, getCommentData, createComment };
+export { addComment, getCommentData, createComment };
