@@ -62,6 +62,22 @@ const displayCountries = (countries, Name) => {
   displayCountOnPage.innerHTML = 1;
 };
 
+export const displayCommentCount = (count) => {
+  const commentCountElement = document.querySelector('.comment-count');
+  commentCountElement.textContent = count;
+};
+
+export const displayComments = (comments) => {
+  const allCommentsElement = document.querySelector('.allComments');
+  allCommentsElement.innerHTML = '';
+
+  comments.forEach((comment) => {
+    const commentElement = document.createElement('div');
+    commentElement.textContent = `${comment.username}: ${comment.comment}`;
+    allCommentsElement.appendChild(commentElement);
+  });
+};
+
 const searchandFind = async (value) => {
   countryInp.value = '';
   const Name = value.toLowerCase();

@@ -3,9 +3,9 @@ import {
   Africabtn, Europebtn,
 } from './DomValues.js';
 import loadCountries from './populate.js';
-import searchandFind from './popupwindow.js';
+import searchandFind, { displayCommentCount, displayComments } from './popupwindow.js';
 import { addLike } from './submitLikes.js';
-import { addComment, getCommentData } from './submitComment.js';
+import { postComment, fetchComments } from './submitComment.js';
 import { mobileMenu, hideMenu } from './mobile.js';
 
 const loadOnPage = () => {
@@ -62,10 +62,16 @@ const loadOnPage = () => {
     }
 
     if (e.target.className === 'commentBtn submit-comment') {
-      addComment(e.target);
+      const countryName = e.target.id;
+      const userName = document.getElementById('userName').value;
+      const userComment = document.getElementById('userComment').value;
+
+      postComment(countryName, userName, userComment);
 
       setTimeout(async () => {
-        await getCommentData(e.target.id);
+        const comments = await fetchComments(countryName);
+        displayComments(comments);
+        displayCommentCount(comments.length);
       }, 1000);
     }
   });
