@@ -9,12 +9,19 @@
 <body>
 
     <header class="header-nav">
-        <div class="logo"> </div>
+        <div class="top-one">
+            <div class="logo"> </div>
 
-        <div class="search-section">
-            <input type="text" id="country-inp" placeholder="Country or Capital Cty name..." />
-            <button id="search-btn">Search</button>
+            <div class="menu"><i class="fa-solid fa-bars fa-xl"></i></div>
+            <div class="closeMenu"><i class="fa-solid fa-circle-xmark fa-xl"></i></div>
+    
         </div>
+
+        <div class="top-two">
+            <div class="search-section">
+                <input type="text" id="country-inp" placeholder="Country or Capital Cty..." />
+                <button id="search-btn">Search</button>
+            </div>
 
         <span class="count-On-display">
 
@@ -22,20 +29,30 @@
 
         <nav class="nav-section">
             <ul>
-                <li class="nav-all-Coun">All Countries</li>
+                <li class="nav-all-Coun">All</li>
                 <li class="nav-Asia">Asia</a></li>
                 <li class="nav-Africa">Africa</li>
                 <li class="nav-Europe">Europe</li>
                 <li class="nav-Americas">Americas</li>
             </ul>
         </nav>
+    </div>
+
+
             
     </header>
 
-<footer>
+    <main class="main-container">
+        <div class="card-secton" id="result">
+            <div class="pop-up">
+
+            </div>
+        </div>
+    </main>
+                
+    <footer>
         <p>&#169; Copyright 2023 - Created by Binyam Tegene and Abbas Aljuaifari under CC License. </p>
     </footer>
     
-    <script src="./index.js"></script>
 </body>
 </html>

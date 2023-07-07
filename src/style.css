@@ -299,6 +299,7 @@ footer {
 }
 
 /* styling for the footer section ends */
+
 @media screen and (min-width: 768px) {
   /* styling for the header section starts */
   .header-nav {
@@ -361,6 +362,7 @@ footer {
   /* styling for the header section ends */
 
   /* styling for the main section starts */
+
   .card-secton {
     margin: 2% 5%;
     grid-template-columns: repeat(3, 1fr);
