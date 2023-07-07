@@ -1,8 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h2><b>README Template</b></h2>
+<img  src='./src/asset/logo-img.gif' width="130px">
+   <h1 style =" color: greenyellow">Xplore</h1>
+  <h2><b>Choose Your next Destination</b></h2>
   
   <!-- <br> -->
 
@@ -33,36 +34,33 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# <img src='./src/asset/logo-img.gif' width="30px"> Xplore <a name="about-project"></a> 
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Ixplore** is a web app built based on [REST countries API](https://restcountries.com/), that provides information about countries via a RESTful API. This project collects information from The REST countries site and provide it in a simple organized way as a web app so that it can be applicable by travel agencies or for personal use to get info about a country or region easily. The App can also collect user information on the specific country as a comment and likes so that the app owner can get feedback from its customers.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
-  <summary>Client</summary>
+  <summary>RESTFUL API</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://restcountries.com/">countries API</a></li>
+    <li><a href="https://microverse.notion.site/Involvement-API-869e60b5ad104603aa6db59e08150270">involvment API</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>JavaScript testing framework</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://jestjs.io/">Jest</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+<summary>Module Bundler</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
   </ul>
 </details>
 
@@ -70,11 +68,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Provides detailed informatio on all countries**
+- **collects user feedback in the form of comment and likes**
+- **Responsive App**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,9 +78,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://google.com)
+- [Video Presentation](https://drive.google.com/file/d/1EbcGRrg-FkY9FJKfu1yujd-0CGSkGdCS/view?usp=drive_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +99,7 @@ In order to run this project you need:
 ### Setup
 Clone this repository to your desired folder or download the Zip folder:
 ```sh
-    "git clone https://github.com/Log-benjamin/My_Portfolio.git"
+    "git clone https://github.com/Log-benjamin/Microverse-Javascript-Capstone/"
 ```
 - Navigate to the location of the folder in your machine:
 
@@ -113,7 +109,7 @@ Clone this repository to your desired folder or download the Zip folder:
 ### Install
 Install all dependencies:
 ```sh
-    "npm install"
+    "npm i"
 ```
 
 ### Usage
@@ -151,18 +147,23 @@ You can deploy this project using: GitHub Pages,
 
 👤 binyam tegene
 
-> - GitHub: [@githubhandle](https://github.com/Log-benjamin?tab=repositories)
-> - Twitter: [@twitterhandle](https://twitter.com/@binyam_tegene)
+> - GitHub: [@github](https://github.com/Log-benjamin?tab=repositories)
+> - Twitter: [@twitte](https://twitter.com/@binyam_tegene)
 > - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binyam-tegene-4b77ab265)
+
+👤 Abbas Aljuaifari
+
+> - GitHub: [@github](https://github.com/Abbas-Aljuaifari)
+> - Twitter: [@twitter](https://twitter.com/faresaj2)
+> - LinkedIn: [LinkedIn](https://www.linkedin.com/in/aabbas-aljuaifari-17a018261)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> - [ ] **[new_feature_1]**
-> - [ ] **[new_feature_2]**
-> - [ ] **[new_feature_3]**
+> - **We will add Frame work for the styling**
+> - **We will improve the Algorithm to make the app more efficent**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +173,7 @@ You can deploy this project using: GitHub Pages,
 
 >   Contributions, issues, and feature requests are welcome!
 
-> Feel free to check the [issues page](../../issues/).
+> Feel free to check the [issues page](https://github.com/Log-benjamin/Microverse-Javascript-Capstone/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +181,7 @@ You can deploy this project using: GitHub Pages,
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project feel free to contact me or make a contribution and share your ideas.
+> If you like this project feel free to contact us, give us ⭐️ or make a contribution and share your ideas.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,8 +189,11 @@ You can deploy this project using: GitHub Pages,
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I would like to thank my coding partners, morning and standup team, as well as code reviewers at Microverse for the amazing learning opportunity.
+> We would like to thank Microverse Inc and its community for the amazing learning opportunity.
 
+> Mr. [FAYDER FLOREZ](https://fayder.eu/) for very usefule open source [RESTFUL Countries API](https://restcountries.com/).
+
+> [Ms.kirti arora](https://github.com/kit0-0?tab=repositories)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
