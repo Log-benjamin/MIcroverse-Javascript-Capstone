@@ -12,73 +12,93 @@ body {
 
 /* styling for the header section starts */
 .header-nav {
-  display: flex;
   background-color: #a9d5e6;
   height: 110px;
 }
 
-.logo {
-  margin: 0 3% 0 3%;
-  padding: 0;
+.top-one {
+  display: flex;
+  justify-content: space-between;
 }
 
-.search-section {
-  width: 38%;
-  margin-top: 1.75rem;
-  padding: 0;
+.top-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  margin-right: 5%;
+  margin-top: 2rem;
+}
+
+.closeMenu,
+.search-section,
+.menu.active,
+.nav-section {
+  display: none;
+}
+
+.nav-section.active {
+  display: block;
+}
+
+.header-nav.active {
+  height: 550px;
+}
+
+.closeMenu.active {
+  display: block;
+  margin-right: 5%;
+  margin-top: 1.5rem;
+}
+
+.search-section.active {
+  display: flex;
+  justify-content: center;
 }
 
 .search-section input {
-  font-size: 1em;
+  font-size: 0.9rem;
   padding: 0;
-  width: 50%;
+  width: 12rem;
   border: none;
+  margin-right: 1%;
   border-bottom: 2px solid rgb(31, 127, 149);
   outline: none;
   background-color: #a9d5e6;
 }
 
 .search-section button {
-  font-size: 1em;
+  font-size: 0.9em;
+  width: 6rem;
+  margin-top: 10px;
   background-color: rgb(31, 127, 149);
   color: #fff;
-  padding: 0.1em 1.5em;
   border: none;
   border-radius: 2em;
 }
 
-.count-On-display {
-  margin-top: 3.5rem;
-  margin-left: -2em;
-  margin-right: 5%;
-  text-align: center;
-  color: rgb(31, 127, 149);
-  padding: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 1.5rem;
-}
-
-.nav-section {
-  margin-top: 1.75rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .nav-section ul {
-  margin: 0;
+  margin: 1rem 2rem 0 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 }
 
 .nav-section ul li {
-  position: relative;
-  margin-right: 2rem;
-  font-size: 1.2rem;
-  color: #848484;
-  height: 30px;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #593b3b;
+}
+
+.count-On-display {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: greenyellow;
+  font-size: 1.5rem;
 }
 
 .search-section button:hover {
@@ -97,11 +117,11 @@ body {
 /* styling for the header section ends */
 
 /* styling for the main section starts */
-
 .card-secton {
-  margin: 2% 5%;
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
   gap: 2rem;
 }
 
@@ -121,8 +141,7 @@ body {
 
 .pop-Container {
   position: relative;
-  margin: 4% 0 4% 5%;
-  width: 85%;
+  margin-top: 4rem;
   background-color: #628490;
   border: none;
   padding: 15px;
@@ -135,13 +154,23 @@ body {
   height: 200px;
 }
 
+.country-Name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.commentLike {
+  display: flex;
+  justify-content: space-between;
+}
+
 .fl-active {
   margin-top: 1rem;
-  margin-bottom: 0;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-right: 4%;
-  width: 40%;
-  height: 270px;
+  width: 90%;
+  height: auto;
 }
 
 .commentBtn {
@@ -153,38 +182,22 @@ body {
   border-radius: 0.6em;
 }
 
-.fa-circle-xmark {
+#remove {
   color: #183343;
   position: absolute;
   right: -10px;
   top: 0.5px;
 }
 
-.country-Name {
+.country-description h2 {
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
-}
-
-.commentLike {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 5%;
-}
-
-.img-and-desc {
-  display: flex;
 }
 
 .country-description h2,
 .country-span {
   color: greenyellow;
-}
-
-.country-description h2 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 footer p {
@@ -203,10 +216,8 @@ footer p {
 }
 
 .commentLike-Pop {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2rem;
-  margin: 2% 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .commentContainer h2 {
@@ -229,13 +240,9 @@ footer p {
   color: aliceblue;
 }
 
-.form-Container {
-  margin-left: 8%;
-}
-
 .form-Container form textarea {
-  width: 76%;
-  height: 100px;
+  width: 90%;
+  height: 120px;
   margin-top: 2rem;
   padding-left: 10px;
   padding-top: 8px;
@@ -261,7 +268,8 @@ footer p {
 }
 
 .fa-heart:hover,
-.fa-circle-xmark:hover {
+.fa-circle-xmark:hover,
+#remove:hover {
   color: #9e3333;
   cursor: pointer;
 }
@@ -284,4 +292,107 @@ footer {
   border-radius: 2%;
 }
 
+.insertLike {
+  color: rgb(255, 89, 0);
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
 /* styling for the footer section ends */
+@media screen and (min-width: 768px) {
+  /* styling for the header section starts */
+  .header-nav {
+    display: flex;
+    padding-right: 2%;
+  }
+
+  .top-one {
+    margin-left: 3%;
+  }
+
+  .menu,
+  .closeMenu {
+    display: none;
+  }
+
+  .top-two {
+    flex-direction: row;
+    margin-left: 3%;
+  }
+
+  .search-section {
+    display: flex;
+    width: 30vw;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+    margin-right: 2vw;
+  }
+
+  .search-section input {
+    font-size: 1em;
+  }
+
+  .count-On-display {
+    display: flex;
+    margin-top: 4rem;
+    margin-right: 5vw;
+    color: rgb(31, 127, 149);
+    font-size: 2vw;
+  }
+
+  .nav-section {
+    display: flex;
+    margin-top: 1.75rem;
+  }
+
+  .nav-section ul {
+    flex-direction: row;
+    list-style: none;
+    margin-right: 3vw;
+  }
+
+  .nav-section ul li {
+    margin-right: 15%;
+    margin-bottom: 2.7rem;
+    font-size: 1.75vw;
+    color: #848484;
+  }
+
+  /* styling for the header section ends */
+
+  /* styling for the main section starts */
+  .card-secton {
+    margin: 2% 5%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pop-Container {
+    position: relative;
+    margin: 4% 0 4% 5%;
+    width: 85%;
+  }
+
+  .fl-active {
+    margin-left: 3%;
+    width: 40%;
+  }
+
+  .commentLike {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5%;
+  }
+
+  .img-and-desc {
+    display: flex;
+  }
+
+  .commentLike-Pop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    margin: 2% 5%;
+  }
+
+  /* styling for the main section ends */
+}
