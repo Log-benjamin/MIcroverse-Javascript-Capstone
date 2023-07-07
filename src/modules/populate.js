@@ -64,5 +64,4 @@ const loadCountries = async (selected) => {
     .then((response) => response.json())
     .then((data) => displayCountries(data, selected, likeData));
 };
-
 export default loadCountries;

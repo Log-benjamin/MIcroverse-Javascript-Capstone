@@ -49,6 +49,11 @@ const loadOnPage = () => {
     e.preventDefault();
     if (e.target.className === 'commentBtn') {
       searchandFind(e.target.id);
+      setTimeout(async () => {
+        const comments = await fetchComments(e.target.id);
+        displayComments(comments);
+        displayCommentCount(comments.length);
+      }, 1000);
     }
 
     if (e.target.id === 'remove') {

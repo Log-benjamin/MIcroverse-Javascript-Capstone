@@ -17,12 +17,11 @@ export const postComment = async (countryName, userName, userComment) => {
     });
 
     if (response.ok) {
-      console.log('Comment posted successfully!');
-    } else {
-      console.log('Failed to post comment');
+      return ('Comment posted successfully!');
     }
+    return ('Failed to post comment');
   } catch (error) {
-    console.log('Error:', error.message);
+    return ('Error:', error.message);
   }
 };
 
@@ -34,10 +33,8 @@ export const fetchComments = async (countryName) => {
       const comments = await response.json();
       return comments;
     }
-    console.log('Failed to fetch comments');
     return [];
   } catch (error) {
-    console.log('Error:', error.message);
     return [];
   }
 };
