@@ -5,13 +5,12 @@ import { getLikeData } from './submitLikes.js';
 let likevalue = 0;
 let tempCount = 0;
 const getCountry = (country, selected, likeData) => {
-
-  likeData.forEach(element => {
-    if (element.item_id === country.name.common){
+  likeData.forEach((element) => {
+    if (element.item_id === country.name.common) {
       likevalue = element.likes;
     }
   });
-  
+
   if (selected === 'allcountries') {
     tempCount += 1;
     return `

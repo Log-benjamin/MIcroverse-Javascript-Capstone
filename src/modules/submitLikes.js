@@ -17,7 +17,7 @@ const addLike = async (countryName) => {
   }
 };
 
-const getLikeData = async (countryName) => {
+const getLikeData = async () => {
   try {
     const response = await fetch(involvmentApiLikes, {
       method: 'GET',
@@ -26,10 +26,10 @@ const getLikeData = async (countryName) => {
       },
     });
     const data = await response.json();
-      return data;
+    return data;
   } catch (error) {
     return [];
   }
 };
 
-export  { addLike, getLikeData };
+export { addLike, getLikeData };
