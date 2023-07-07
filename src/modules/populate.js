@@ -1,8 +1,16 @@
 import { baseURL } from './getApiData.js';
 import { cardSection, displayCountOnPage } from './DomValues.js';
+import { getLikeData } from './submitLikes.js';
 
+let likevalue = 0;
 let tempCount = 0;
-const getCountry = (country, selected) => {
+const getCountry = (country, selected, likeData) => {
+  likeData.forEach((element) => {
+    if (element.item_id === country.name.common) {
+      likevalue = element.likes;
+    }
+  });
+
   if (selected === 'allcountries') {
     tempCount += 1;
     return `
@@ -14,7 +22,7 @@ const getCountry = (country, selected) => {
 
                     <div class="countLikes">
                         <i id="${country.name.common}"  class="fa-regular fa-heart fa-2xl"></i>
-                        <span class="likeValue">likes</span>
+                     <span class="insertLike">${likevalue}</span><span>likes</span>
                     </div>
                  </div>
            </div>
@@ -32,7 +40,7 @@ const getCountry = (country, selected) => {
       
                     <div class="countLikes">
                         <i id="${country.name.common}"  class="fa-regular fa-heart fa-2xl"></i>
-                        <span class="likeValue">likes</span>
+                        <span class="insertLike">${likevalue}</span><span>likes</span>
                     </div>
                     
                 </div>
@@ -42,18 +50,19 @@ const getCountry = (country, selected) => {
   return '';
 };
 
-const displayCountries = (countries, selected) => {
+const displayCountries = (countries, selected, likeData) => {
   tempCount = 0;
-  const countriesHTML = countries.map((country) => getCountry(country, selected));
+  const countriesHTML = countries.map((country) => getCountry(country, selected, likeData));
   cardSection.innerHTML = countriesHTML.join('');
   displayCountOnPage.innerHTML = tempCount;
 };
 
 const loadCountries = async (selected) => {
   cardSection.classList.remove('active');
+  const likeData = await getLikeData();
   await fetch(baseURL)
     .then((response) => response.json())
-    .then((data) => displayCountries(data, selected));
+    .then((data) => displayCountries(data, selected, likeData));
 };
 
 export default loadCountries;
