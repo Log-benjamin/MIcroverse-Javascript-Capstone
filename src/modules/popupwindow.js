@@ -31,6 +31,22 @@ const getCountry = (country, Name) => {
           
             <div class="commentLike-Pop">
 
+              <div class="commentContainer">
+                  <h2>Comments (<span class="comment-count">0</span>)</h2>
+                  <div class="allComments">
+
+                  </div>
+              </div> 
+                
+                <div class="form-Container">
+                    <h3>Add a Comment</h3>
+                    <form action="#">
+                        <input type="text" name="name" id="userName" placeholder="Enter Your name" required>
+                        <textarea type="text" id="userComment" rows="10" cols="40" placeholder="Enter Your Comment here..." required></textarea>
+                        <button id="${country.name.common}" class="commentBtn submit-comment" type="text">Comment</button>
+                    </form>
+                    
+                </div>
                 
             </div>
        </div>

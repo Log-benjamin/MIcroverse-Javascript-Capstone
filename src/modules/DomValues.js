@@ -17,6 +17,5 @@ const displayCountOnPage = document.querySelector('.count-On-display');
 
 export {
   cardContainer, cardSection, searchBtn, countryInp, allCountriesbtn, Americasbtn,
-  Asiabtn, logoContainer, Africabtn, Europebtn, menuBtn, closemenuBtn, searchContainer,
-  headerNav, navSection, displayCountOnPage,
+  Asiabtn, logoContainer, Africabtn, Europebtn, menuBtn, closemenuBtn, searchContainer, headerNav, navSection, displayCountOnPage
 };

@@ -11,109 +11,95 @@ body {
 }
 
 /* styling for the header section starts */
-.header-nav {
-  background-color: #a9d5e6;
-  height: 110px;
-}
+  .header-nav {
+    background-color: #a9d5e6;
+    height: 110px;
+  }
+  .top-one {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.top-one {
-  display: flex;
-  justify-content: space-between;
-}
+  .top-two {
+    display: flex;
+    flex-direction: column;
+  }
 
-.top-two {
-  display: flex;
-  flex-direction: column;
-}
+  .menu {
+      margin-right: 5%;
+      margin-top: 2rem;
+  }
+  .closeMenu, .search-section, .menu.active, .nav-section {
+    display: none; 
+  }
 
-.menu {
-  margin-right: 5%;
-  margin-top: 2rem;
-}
+  .nav-section.active {
+    display: block;
+  }
+  .header-nav.active {
+    height: 550px;
+  }
+  .closeMenu.active {
+    display: block;
+    margin-right: 5%;
+    margin-top: 1.5rem;
+  }
+  .search-section.active {
+    display: flex;
+    justify-content: center;
+  }
+  .search-section input {
+    font-size: 0.9rem;
+    padding: 0;
+    width: 12rem;
+    border: none; 
+    margin-right: 1%;
+    border-bottom: 2px solid rgb(31, 127, 149);
+    outline: none;
+    background-color: #a9d5e6;
+  }
+  .search-section button {
+    font-size: 0.9em;
+    width: 6rem;
+    margin-top: 10px;
+    background-color: rgb(31, 127, 149);
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+  }
+  .nav-section ul {
+    margin: 1rem 2rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-section ul li {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #593b3b;
+  } 
+  .count-On-display  {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: center;
+    color:  greenyellow;
+    font-size: 1.5rem;
+  }
 
-.closeMenu,
-.search-section,
-.menu.active,
-.nav-section {
-  display: none;
-}
-
-.nav-section.active {
-  display: block;
-}
-
-.header-nav.active {
-  height: 550px;
-}
-
-.closeMenu.active {
-  display: block;
-  margin-right: 5%;
-  margin-top: 1.5rem;
-}
-
-.search-section.active {
-  display: flex;
-  justify-content: center;
-}
-
-.search-section input {
-  font-size: 0.9rem;
-  padding: 0;
-  width: 12rem;
-  border: none;
-  margin-right: 1%;
-  border-bottom: 2px solid rgb(31, 127, 149);
-  outline: none;
-  background-color: #a9d5e6;
-}
-
-.search-section button {
-  font-size: 0.9em;
-  width: 6rem;
-  margin-top: 10px;
-  background-color: rgb(31, 127, 149);
-  color: #fff;
-  border: none;
-  border-radius: 2em;
-}
-
-.nav-section ul {
-  margin: 1rem 2rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-
-.nav-section ul li {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: #593b3b;
-}
-
-.count-On-display {
-  display: block;
-  margin-top: 0.5rem;
-  text-align: center;
-  color: greenyellow;
-  font-size: 1.5rem;
-}
-
-.search-section button:hover {
-  color: black;
-  background-color: rgb(49, 169, 133);
-  cursor: pointer;
-}
-
-.nav-section ul li:hover {
-  color: rgb(21, 156, 186);
-  cursor: pointer;
-  border-bottom: 2px solid rgb(21, 156, 186);
-  border-radius: 0.5em;
-}
-
+  .search-section button:hover {
+    color: black;
+    background-color: rgb(49, 169, 133);
+    cursor: pointer;
+  }
+  
+  .nav-section ul li:hover {
+    color: rgb(21, 156, 186);
+    cursor: pointer;
+    border-bottom: 2px solid rgb(21, 156, 186);
+    border-radius: 0.5em;
+  }
 /* styling for the header section ends */
 
 /* styling for the main section starts */
@@ -124,7 +110,6 @@ body {
   justify-items: center;
   gap: 2rem;
 }
-
 .country-Container {
   background-color: #a0bcc6;
   border: 3px solid rgb(101, 101, 101);
@@ -139,6 +124,10 @@ body {
   gap: 2rem;
 }
 
+.card-secton.active {
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .pop-Container {
   position: relative;
   margin-top: 4rem;
@@ -147,7 +136,6 @@ body {
   padding: 15px;
   border-radius: 1em;
 }
-
 .flag {
   margin-top: 10px;
   width: 100%;
@@ -164,7 +152,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .fl-active {
   margin-top: 1rem;
   margin-left: 5%;
@@ -172,7 +159,6 @@ body {
   width: 90%;
   height: auto;
 }
-
 .commentBtn {
   font-size: 1.1em;
   background-color: rgb(31, 127, 149);
@@ -181,18 +167,16 @@ body {
   border: none;
   border-radius: 0.6em;
 }
-
-#remove {
+#remove  {
   color: #183343;
   position: absolute;
   right: -10px;
   top: 0.5px;
 }
-
 .country-description h2 {
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .country-description h2,
@@ -211,15 +195,14 @@ footer p {
   padding: 0;
 }
 
+
 .country-description .wiki-link a {
   color: blue;
 }
-
 .commentLike-Pop {
   display: flex;
   flex-direction: column;
 }
-
 .commentContainer h2 {
   text-align: center;
 }
@@ -235,7 +218,6 @@ footer p {
   color: white;
   background-color: #628490;
 }
-
 #userName::placeholder {
   color: aliceblue;
 }
@@ -250,7 +232,6 @@ footer p {
   border-radius: 1em;
   color: black;
 }
-
 .form-Container form textarea::placeholder {
   color: rgb(150, 138, 138);
 }
@@ -268,8 +249,7 @@ footer p {
 }
 
 .fa-heart:hover,
-.fa-circle-xmark:hover,
-#remove:hover {
+.fa-circle-xmark:hover, #remove:hover {
   color: #9e3333;
   cursor: pointer;
 }
@@ -291,108 +271,104 @@ footer {
   border: 0.5px solid black;
   border-radius: 2%;
 }
-
 .insertLike {
   color: rgb(255, 89, 0);
   font-size: 1.5rem;
   margin-right: 5px;
 }
-
 /* styling for the footer section ends */
+
+
 @media screen and (min-width: 768px) {
   /* styling for the header section starts */
-  .header-nav {
-    display: flex;
-    padding-right: 2%;
-  }
+.header-nav {
+  display: flex;
+  padding-right: 2%;
+}
+.top-one {
+  margin-left: 3%;
+}
+.menu, .closeMenu {
+  display: none;
+}
+.top-two {
+  flex-direction: row;
+  margin-left: 3%;
+}
+.search-section {
+  display: flex;
+  width: 30vw;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
+  margin-right: 2vw;
+}
+.search-section input {
+  font-size: 1em;
+}
 
-  .top-one {
-    margin-left: 3%;
-  }
+.count-On-display {
+  display: flex;
+  margin-top: 4rem;
+  margin-right: 5vw;
+  color: rgb(31, 127, 149);
+  font-size: 2vw;
+}
 
-  .menu,
-  .closeMenu {
-    display: none;
-  }
+.nav-section {
+  display: flex;
+  margin-top: 1.75rem;
+}
 
-  .top-two {
-    flex-direction: row;
-    margin-left: 3%;
-  }
+.nav-section ul {
+  flex-direction: row;
+  list-style: none;
+  margin-right: 3vw;
+}
 
-  .search-section {
-    display: flex;
-    width: 30vw;
-    margin-top: 1.75rem;
-    margin-bottom: 2rem;
-    margin-right: 2vw;
-  }
+.nav-section ul li {
+  margin-right: 15%;
+  margin-bottom: 2.7rem;
+  font-size: 1.75vw;
+  color: #848484;
+}
 
-  .search-section input {
-    font-size: 1em;
-  }
+/* styling for the header section ends */
 
-  .count-On-display {
-    display: flex;
-    margin-top: 4rem;
-    margin-right: 5vw;
-    color: rgb(31, 127, 149);
-    font-size: 2vw;
-  }
+/* styling for the main section starts */
 
-  .nav-section {
-    display: flex;
-    margin-top: 1.75rem;
-  }
+.card-secton {
+  margin: 2% 5%;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  .nav-section ul {
-    flex-direction: row;
-    list-style: none;
-    margin-right: 3vw;
-  }
 
-  .nav-section ul li {
-    margin-right: 15%;
-    margin-bottom: 2.7rem;
-    font-size: 1.75vw;
-    color: #848484;
-  }
+.pop-Container {
+  position: relative;
+  margin: 4% 0 4% 5%;
+  width: 85%;
+}
 
-  /* styling for the header section ends */
 
-  /* styling for the main section starts */
-  .card-secton {
-    margin: 2% 5%;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.fl-active {
+  margin-left: 3%;
+  width: 40%;
+}
 
-  .pop-Container {
-    position: relative;
-    margin: 4% 0 4% 5%;
-    width: 85%;
-  }
+.commentLike {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 5%;
+}
 
-  .fl-active {
-    margin-left: 3%;
-    width: 40%;
-  }
+.img-and-desc {
+  display: flex;
+} 
 
-  .commentLike {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 5%;
-  }
-
-  .img-and-desc {
-    display: flex;
-  }
-
-  .commentLike-Pop {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 2rem;
-    margin: 2% 5%;
-  }
-
-  /* styling for the main section ends */
+.commentLike-Pop {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  margin: 2% 5%;
+}
+/* styling for the main section ends */
 }
