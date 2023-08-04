@@ -79,7 +79,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://log-benjamin.github.io/Microverse-Javascript-Capstone/dist/)
+- [Live Demo Link](https://log-benjamin.github.io/Xplore/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
