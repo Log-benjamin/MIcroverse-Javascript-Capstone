@@ -37,7 +37,7 @@
 
 # <img src='./src/asset/logo-img.gif' width="30px"> Xplore <a name="about-project"></a> 
 
-**Ixplore** is a web app built based on [REST countries API](https://restcountries.com/), that provides information about countries via a RESTful API. This project collects information from The REST countries site and provide it in a simple organized way as a web app so that it can be applicable by travel agencies or for personal use to get info about a country or region easily. The App can also collect user information on the specific country as a comment and likes so that the app owner can get feedback from its customers.
+**Xplore** is a web app built based on [REST countries API](https://restcountries.com/), that provides information about countries via a RESTful API. This project collects information from The REST countries site and provide it in a simple organized way as a web app so that it can be applicable by travel agencies or for personal use to get info about a country or region easily. The App can also collect user information on the specific country as a comment and likes so that the app owner can get feedback from its customers.
 
 ## 🛠 Built With <a name="built-with"></a>
 
